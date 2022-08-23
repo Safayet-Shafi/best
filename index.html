@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chose Your Favourite Five players</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+</head>
+<body class="body-section">
+
+    <!-- head start -->
+    
+    <header class="head">
+        <section class="head-section mx-5 ">
+            <div class="row">
+                <div class="col-3">
+                    <img class="head-img" src="images/naymer-removebg-preview.png" alt="">
+                </div>
+                <div class="col-8 p-2">
+                    <div class="p-2 m-5">
+                        <h1 class=" text-center display-4 fw-bold text-warning">
+                            <em>Chose Your Favourite Five players</em>
+                        </h1>
+                        <hr class="hr">
+                        <p class="text-info fw-bold text-center">
+                            What is the origin of football? Modern football originated in Britain in the 19th century. Though “folk football” had been played since medieval times with varying rules, the game began to be standardized when it was taken up as a winter game at public schools.
+                        </p>
+                    </div>
+                </div>
+                <!-- <div class="col-3">
+                    <img class="head-img" src="images/football.jpg" alt="">
+                </div> -->
+
+
+            </div>
+        </section>
+    </header>
+    <!-- head end -->
+    <!-- main start -->
+    <main class="main-Section">
+        <section class="mx-5 mt-5">
+            <div class="row gx-4 ">
+                <div class="col-3  border border-dark rounded-4 mb-5 bg-success">
+                    <img class="img-thumbnail" src="images/messi.jpg" alt="">
+                    <h1 class="text-center fw-bolder" id="name-field1">Lionel Messi</h1>
+                    <h5 class="text-center pb-2 text-warning">350 goals || 50 assists</h5>
+                    <div class="d-grid gap-2 col-8 mx-auto mb-4">
+                        <button id="btn-select1" class="btn btn-primary fw-bolder">Select</button>
+                    </div>
+                    
+
+                </div>
+                <div class="col-3  border border-dark rounded-4 mb-5 bg-success">
+                    <img class="img-thumbnail" src="images/resize-naymer1.jpg" alt="">
+                    <h1 class="text-center fw-bolder" id="name-field2">Neymar jr</h1>
+                    <h5 class="text-center pb-2 text-warning">400 goals || 42 assists</h5>
+                    <div class="d-grid gap-2 col-8 mx-auto mb-4">
+                        <button id="btn-select2" class="btn btn-primary fw-bolder ">Select</button>
+                    </div>
+                    
+
+                </div>
+                <div class="col-3 border border-dark rounded-4 mb-5 bg-success">
+                    <img class="img-thumbnail" src="images/resize-ambappe.jpg" alt="">
+                    <h1 class="text-center fw-bolder" id="name-field3">Kylian Mbappé</h1>
+                    <h5 class="text-center pb-2 text-warning">190 goals || 50 assists</h5>
+                    <div class="d-grid gap-2 col-8 mx-auto mb-4">
+                        <button id="btn-select3" class="btn btn-primary fw-bolder">Select</button>
+                    </div>
+                    
+                </div>
+                <div class="col-3 border border-dark bg-dark rounded-4 mb-5">
+                    <h1 class="text-white fw-bolder">Your Lucky 5</h1><hr class="hr">
+                    <ol id="player-list" class="fw-bolder text-white fs-4 ">
+                        
+                    </ol>
+
+                </div>
+                <div class="col-3 border border-dark rounded-4 bg-success ">
+                    <img class="img-thumbnail" src="images/resize-ramos.jpg" alt="">
+                    <h1 class="text-center fw-bolder" id="name-field4">Sergio Ramos</h1>
+                    <h5 class="text-center pb-2 text-warning">30 goals || 59 assists</h5>
+                    <div class="d-grid gap-2 col-8 mx-auto">
+                        <button id="btn-select4" class="btn btn-primary fw-bolder">Select</button>
+                    </div>
+                    
+                </div>
+                <div class="col-3 border border-dark bg-success rounded-4">
+                    <img class="img-thumbnail" src="images/resize-mark.jpg" alt="">
+                    <h1 class="text-center fw-bolder" id="name-field5">Marquinhos</h1>
+                    <h5 class="text-center pb-2 text-warning">305 goals || 85 assists</h5>
+                    <div class="d-grid gap-2 col-8 mx-auto ">
+                        <button id="btn-select5" class="btn btn-primary fw-bolder">Select</button>
+                    </div>
+                    
+                </div>
+                <div class="col-3 border border-dark bg-success rounded-4">
+                    <img class="img-thumbnail" src="images/resize-silva.jpg" alt="">
+                    <h1 class="text-center fw-bolder" id="name-field6">Thiago Silva</h1>
+                    <h5 class="text-center pb-2 text-warning">200 goals || 174 assists</h5>
+                    <div class="d-grid gap-2 col-8 mx-auto ">
+                        <button id="btn-select6" class="btn btn-primary fw-bolder">Select</button>
+                    </div>
+                   
+                  <!-- cancolation part start   -->
+                </div>
+                <div class="col-3  border border-dark rounded-4 bg-dark ">
+                    <div class="mb-3">
+                            <h2 class="text-center text-warning ">Budget</h2>
+                            <h6 class="d-inline text-warning">Per Player :</h6>
+                            <input  type="number" name="" id="player-budget">
+                    </div>
+                    <div class="d-grid gap-2 col-8 mx-auto mb-2">
+                          <button id="btn-calculate" class="btn btn-primary fw-bolder">Calculate</button>
+                    </div>
+                    <h5 class="text-center text-warning">Player Expensec: $<span id="total-player-cost">00</span></h5>
+                    <div class="mb-3">
+                        
+                        <h6 class="d-inline text-warning">Manager :&nbsp</h6>
+                        <input  type="number" name="" id="manager-cost">
+                    </div>
+                    
+                    
+                    <div class="mb-3">
+                        
+                        <h6 class="d-inline text-warning">Coach :&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</h6>
+                        <input  type="number" name="" id="coach-cost">
+                    </div>
+                    <div class="d-grid gap-2 col-8 mx-auto mb-2">
+                        <button id="btn-calculate-total" class="btn btn-primary fw-bolder">Calculate Total</button>
+                  </div>
+                  <h5 class="text-center text-warning">Total: $<span id="all-total">00</span></h5>
+
+                </div>
+                <!-- calculation end -->
+                <div class="col-3 border border-dark bg-success rounded-4 mt-5">
+                    <img class="img-thumbnail" src="images/resize-navas.jpg" alt="">
+                    <h1 class="text-center fw-bolder" id="name-field7">Keylor Navas</h1>
+                    <h5 class="text-center pb-2 text-warning">Goal Keeper || 540 saves </h5>
+                    <div class="d-grid gap-2 col-8 mx-auto ">
+                        <button id="btn-select7" class="btn btn-primary fw-bolder">Select</button>
+                    </div>
+                   
+                    
+                </div>
+                <div class="col-3 border border-dark bg-success rounded-4 mt-5">
+                    <img class="img-thumbnail" src="images/resize-hakimi.jpg" alt="">
+                    <h1 class="text-center fw-bolder" id="name-field8">Achraf Hakimi</h1>
+                    <h5 class="text-center pb-2 text-warning">150 goals || 35 assists</h5>
+                    <div class="d-grid gap-2 col-8 mx-auto ">
+                        <button id="btn-select8" class="btn btn-primary fw-bolder">Select</button>
+                    </div>
+                   
+                    
+                </div>
+                <div class="col-3 border border-dark bg-success rounded-4 mt-5">
+                    <img class="img-thumbnail" src="images/resize-verratti.jpg" alt="">
+                    <h1 class="text-center fw-bolder" id="name-field9">Marco Verratti</h1>
+                    <h5 class="text-center pb-2 text-warning"> 270 goals || 55 assists</h5>
+                    <div class="d-grid gap-2 col-8 mx-auto mb-4 ">
+                        <button id="btn-select9" class="btn btn-primary fw-bolder">Select</button>
+                    </div>
+                   
+                    
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer-section text-center">
+        <h1 class="pt-5 text-white fw-bolder fs-6"><small>© Safayet Ahmed Khan || PSG All Rights Reserved</small> </h1>
+    </footer>
+   
+    <script src="utilities.js"></script>
+    <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    
+   
+</body>
+</html>

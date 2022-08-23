@@ -1,0 +1,22 @@
+.body-section{
+    background-color: rgb(29, 28, 28);
+}
+.head-section{
+    height:50vh;
+    
+    background-color: rgb(5, 5, 5);
+}
+.head-img{
+    height: 50vh;
+    width: 28vw;
+}
+.footer-section{
+    height: 15vh;
+    margin-top: 8px;
+    background-color: black;
+    font-size: 15px;
+}
+.hr{
+    border-top: 3px double #02fa02a1;
+    opacity: 1;
+}
